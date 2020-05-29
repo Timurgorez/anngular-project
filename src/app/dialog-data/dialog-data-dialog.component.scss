@@ -1,7 +1,40 @@
-.mat-dialog-container{
-    padding: 0;
-    background: red;
-}
+
+
 .mat-dialog-content{
-    padding:20px;
+    padding: 0;
+    margin: 20px;
+}
+.mat-dialog-title{
+    background: deepskyblue;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mat-dialog-actions{
+    margin-bottom: 0;
+    padding: 10px 20px;
+}
+.closeDialog{
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url('https://static.thenounproject.com/png/26894-200.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 50% 50%;
+    cursor: pointer;
+}
+
+
+.mat-remove{
+    background: red;
+    color: #fff;
+}
+.mat-add{
+    background: green;
+    color: #fff;
 }

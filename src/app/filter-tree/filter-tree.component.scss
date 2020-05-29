@@ -1,0 +1,155 @@
+.active {
+    background-color: red;
+}
+.mat-tree-node {
+    flex-wrap: wrap;
+}
+.tree__btns-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .tree__btns-wrap_add button,
+    .tree__btns-wrap_swicher button{
+        border-radius: 0;
+    }
+    .tree__btns-wrap_add button:first-child,
+    .tree__btns-wrap_swicher button:first-child{
+        -webkit-border-radius: 4px 0 0 4px;
+        -moz-border-radius: 4px 0 0 4px;
+        border-radius: 4px 0 0 4px;
+    }
+    .tree__btns-wrap_add button:last-child,
+    .tree__btns-wrap_swicher button:last-child{
+        -webkit-border-radius: 0 4px 4px 0;
+        -moz-border-radius: 0 4px 4px 0;
+        border-radius: 0 4px 4px 0;
+    }
+}
+
+.tree__inputs-wrap, .tree__item{
+    display: flex;
+    //flex-wrap: wrap;
+    width: 100%;
+    padding-left: 10px;
+}
+.tree__inputs-wrap{
+    margin-top: 10px;
+}
+
+.tree__item-branch, .tree__group-branch{
+    width: 30px;
+    height: 120%;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+    position: absolute;
+    top: -65%;
+    left: -30px;
+}
+.tree__item-branch{
+    height: 160%;
+    top: -110%;
+}
+
+
+.wrap-tree__group {
+    border: 1px solid darkgoldenrod;
+    border-radius: 4px;
+    background: lightgoldenrodyellow;
+}
+
+.tree__group, .tree__item{
+    border: 1px solid darkgoldenrod;
+    border-radius: 4px;
+    background: lightgoldenrodyellow;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+.tree__item{
+    flex-wrap: nowrap;
+}
+mat-tree-node{
+    &:first-child .tree__item,
+    &:first-child .tree__group{
+        border: none;
+    }
+    &:first-child .tree__group .tree__group-branch{
+        display: none;
+    }
+}
+
+.tree__inputs-wrap mat-form-field,
+.tree__item mat-form-field{
+    padding: 0 10px;
+}
+
+
+.wrap__group{
+    border: 1px solid green;
+}
+
+
+
+.mat-custom {
+    background-color: lightblue;
+    color: #fff;
+}
+.mat-custom.active {
+    background-color: deepskyblue;
+    color: #fff;
+}
+
+.mat-remove{
+    background: red;
+    color: #fff;
+    padding-left: 25px;
+    &:before{
+        content: "";
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: calc(50% - 10px);
+        left: 5px;
+        background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/1200px-VisualEditor_-_Icon_-_Close_-_white.svg.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 50% 50%;
+    }
+}
+.mat-add{
+    background: green;
+    color: #fff;
+    padding-left: 25px;
+    &:before{
+        content: "";
+        display: inline-block;
+        height: 14px;
+        width: 2px;
+        position: absolute;
+        top: 11px;
+        left: 12px;
+        background: #fff;
+
+    }
+    &:after{
+        content: "";
+        display: inline-block;
+        height: 2px;
+        width: 14px;
+        position: absolute;
+        top: 17px;
+        left: 6px;
+        background: #fff;
+
+    }
+}
+.mat-tree{
+    display: inline-block;
+}
+
+
+

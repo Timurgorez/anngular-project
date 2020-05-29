@@ -1,0 +1,22 @@
+
+.mat-dialog-content{
+    padding:20px;
+}
+
+.mat-custom {
+    background-color: lightblue;
+    color: #fff;
+}
+.mat-custom.active {
+    background-color: deepskyblue;
+    color: #fff;
+}
+
+.mat-remove{
+    background: red;
+    color: #fff;
+}
+.mat-add{
+    background: green;
+    color: #fff;
+}

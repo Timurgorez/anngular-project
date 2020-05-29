@@ -1,1 +1,17 @@
-<h2>Hello word</h2>
+<h1 mat-dialog-title>Common filter | Filtered Rows: {{data.name}}<span class="closeDialog" (click)="onNoClick()"></span></h1>
+<div mat-dialog-content>
+    <!--<p>What's your favorite animal?</p>-->
+    <!--<mat-form-field>-->
+        <!--<mat-label>Favorite Animal</mat-label>-->
+        <!--<input matInput [(ngModel)]="data.animal"/>-->
+    <!--</mat-form-field>-->
+
+
+    <app-kt-filter-tree></app-kt-filter-tree>
+
+
+</div>
+<div mat-dialog-actions>
+    <button mat-button color="remove" (click)="onNoClick()">RESET</button>
+    <button mat-button color="add" [mat-dialog-close]="data.animal" cdkFocusInitial>Apply</button>
+</div>
